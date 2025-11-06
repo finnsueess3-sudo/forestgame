@@ -1,0 +1,8 @@
+body { margin:0; overflow:hidden; background:#87CEEB; }
+#crosshair {
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%, -50%);
+  font-size:32px; color:white;
+  pointer-events:none;
+}
