@@ -1,16 +1,11 @@
 {
-  "name": "mobile-3d-fps-server",
+  "name": "mobile-3d-fps-web",
   "version": "1.0.0",
-  "description": "Server / Build scripts for Mobile 3D FPS Unity game",
-  "main": "server.js",
+  "description": "Mobile 3D Kampfspiel Frontend (HTML/CSS/JS)",
   "scripts": {
-    "start": "node server.js",
-    "build": "echo 'Unity Build Script Placeholder'"
+    "start": "live-server public"
   },
-  "author": "DeinName",
-  "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2",
-    "socket.io": "^4.8.1"
+    "live-server": "^1.2.2"
   }
 }
