@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<title>Forest Game</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile 3D Kampfspiel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="crosshair">+</div>
-<script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
-<script src="/socket.io/socket.io.js"></script>
-<script src="scripts.js"></script>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui">
+            <div id="hp-bar">
+                <span id="hp-text">100 / 100</span>
+                <div id="hp-fill"></div>
+            </div>
+            <button id="weapon1">Schwert</button>
+            <button id="weapon2">Bogen</button>
+        </div>
+    </div>
+    <script type="module" src="scripts/main.js"></script>
 </body>
 </html>
