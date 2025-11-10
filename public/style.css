@@ -1,8 +1,57 @@
-body { margin:0; overflow:hidden; background:#87CEEB; }
-#crosshair {
-  position:absolute;
-  top:50%; left:50%;
-  transform:translate(-50%, -50%);
-  font-size:32px; color:white;
-  pointer-events:none;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #87ceeb; /* Himmel als Platzhalter */
+}
+
+#ui {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 200px;
+}
+
+#hp-bar {
+    background: #333;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#hp-fill {
+    background: red;
+    width: 100%;
+    height: 100%;
+}
+
+#hp-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    top: 0;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+    font-size: 16px;
 }
