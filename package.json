@@ -1,12 +1,16 @@
 {
-  "name": "forest-game",
+  "name": "mobile-3d-fps-server",
   "version": "1.0.0",
+  "description": "Server / Build scripts for Mobile 3D FPS Unity game",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "echo 'Unity Build Script Placeholder'"
   },
+  "author": "DeinName",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
-    "socket.io": "^4.7.2"
+    "socket.io": "^4.8.1"
   }
 }
